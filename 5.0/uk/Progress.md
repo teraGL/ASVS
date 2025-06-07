@@ -2,8 +2,8 @@
 
 | Progress type | Files done | Percentage | Status |
 | :--- | :---: | :---: | :---: |
-| Translated (draft) | 10 / 28 | 36% | ✅ |
-| Reviewed (final) | 10 / 28 | 36% | 🔍 |
+| Translated (draft) | 11 / 28 | 39% | ✅ |
+| Reviewed (final) | 11 / 28 | 39% | 🔍 |
 
 Each document below tracks its translation progress using a single status symbol:
 
@@ -26,8 +26,8 @@ Each document below tracks its translation progress using a single status symbol
 | 0x11-V2-Validation-and-Business-Logic.md | 🔍 Reviewed |
 | 0x12-V3-Web-Frontend-Security.md | 🔍 Reviewed |
 | 0x13-V4-API-and-Web-Service.md | 🔍 Reviewed |
-| 0x14-V5-File-Handling.md | 🔄 In Progress |
-| 0x15-V6-Authentication.md | ⬜ Not started |
+| 0x14-V5-File-Handling.md | 🔍 Reviewed |
+| 0x15-V6-Authentication.md | 🔄 In Progress |
 | 0x16-V7-Session-Management.md | ⬜ Not started |
 | 0x17-V8-Authorization.md | ⬜ Not started |
 | 0x18-V9-Self-contained-Tokens.md | ⬜ Not started |
