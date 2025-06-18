@@ -2,7 +2,7 @@
 
 ## Мета контролю
 
-Автентифікація це процес встановлення або підтвердження справжності особи чи пристрою. Вона передбачає перевірку заявлених відомостей про користувача або пристрій, забезпечує стійкість до спроб видавати себе за іншу особу  та запобігає відновленню чи перехопленню паролів.
+Автентифікація це процес встановлення або підтвердження справжності особи чи пристрою. Вона передбачає перевірку заявлених відомостей про користувача або пристрій, забезпечує стійкість до спроб видавати себе за іншу особу та запобігає відновленню чи перехопленню паролів.
 
 [NIST SP 800-63](https://pages.nist.gov/800-63-3/) це сучасний стандарт, заснований на доказовому підході, який є корисним для організацій у всьому світі, а особливо для державних установ США та тих, хто з ними взаємодіє.
 
@@ -10,7 +10,7 @@
 
 Крім того, термінологія NIST SP 800-63 місцями може відрізнятися, і в цьому розділі часто використовується більш загальнозрозуміла термінологія для підвищення ясності.
 
-Поширеною функцією більш просунутих застосунках є здатність адаптувати етапи автентифікації залежно від різних факторів ризику. Ця функція розглядається в розділі "Авторизація", оскільки ці механізми також потрібно враховувати при прийнятті рішень щодо авторизації.
+Поширеною функцією більш просунутих застосунків є здатність адаптувати етапи автентифікації залежно від різних факторів ризику. Ця функція розглядається в розділі "Авторизація", оскільки ці механізми також потрібно враховувати при прийнятті рішень щодо авторизації.
 
 ## V6.1 Документація з автентифікації
 
@@ -20,11 +20,11 @@
 | :---: | :--- | :---: |
 | **6.1.1** | Перевірити, що в документації до застосунку визначено, як використовуються засоби контролю, такі як обмеження частоти запитів, захист від автоматизації та адаптивна реакція для протидії атакам, таким як підстановка облікових даних (credential stuffing) та перебір паролів (brute force). У документації має бути чітко зазначено, як ці засоби контролю налаштовано та як вони запобігають зловмисному блокуванню облікових записів. | 1 |
 | **6.1.2** | Перевірити, що задокументовано перелік контекстно-специфічних слів з метою запобігання їх використанню в паролях. До такого переліку можуть входити варіації назв організацій, продуктів, ідентифікаторів систем, кодових назв проєктів, назв підрозділів або ролей та подібне. | 2 |
-| **6.1.3** | Перевірити, що у разі наявності в застосунку кількох шляхів автентифікації, усі вони задокументовані разом із заходами безпеки та міцністю (рівнем) автентифікації, які мають послідовно застосовуватися для всіх них. | 2 |
+| **6.1.3** | Перевірити, що у разі наявності в застосунку кількох шляхів автентифікації, усі вони задокументовані разом із заходами безпеки та силою автентифікації, які мають послідовно застосовуватися для всіх них. | 2 |
 
 ## V6.2 Безпека паролів
 
-Паролі, які у стандарті NIST SP 800-63 називаються "Memorized Secrets", включають паролі, фрази-паролі, PIN-коди, схеми розблокування, а також вибір правильного зображення, наприклад, кошеняти чи іншого елемента. Їх, як правило, вважають "чимось, що вам відомо", і вони часто використовуються як механізм однофакторної автентифікації.
+Паролі, які у стандарті NIST SP 800-63 називаються "Memorized Secrets", включають паролі, фрази-паролі, PIN-коди, схеми розблокування, а також вибір правильного зображення, наприклад, кошеняти чи іншого елемента. Їх, як правило, вважають "те, що ви знаєте", і вони часто використовуються як механізм однофакторної автентифікації.
 
 Відповідно, цей підрозділ містить вимоги щодо забезпечення безпечного створення та обробки паролів. Більшість вимог належать до рівня L1, оскільки вони є найважливішими на цьому рівні. Починаючи з рівня L2, необхідно впроваджувати механізми багатофакторної автентифікації, де паролі можуть бути одним із факторів.
 
@@ -37,7 +37,7 @@
 | **6.2.3** | Перевірити, що функціональність зміни пароля вимагає введення поточного та нового паролів користувача. | 1 |
 | **6.2.4** | Перевірити, що паролі, які надані під час реєстрації облікового запису або зміни пароля, перевіряються за допомогою наявного набору щонайменше 3000 найпоширеніших паролів, які відповідають політиці паролів застосунку, наприклад, мінімальній довжині. | 1 |
 | **6.2.5** | Перевірити, що паролі можуть містити будь-які символи без обмежень щодо типу дозволених символів. Не повинно бути вимог щодо мінімальної кількості символів верхнього або нижнього регістру, цифр або спеціальних символів. | 1 |
-| **6.2.6** | Перевірити, що поля введення пароля використовує type=password для приховування введених символів. Застосунки можуть дозволяти користувачеві тимчасово переглядати увесь прихований пароль або останній введений символ пароля. | 1 |
+| **6.2.6** | Перевірити, що поля введення пароля використовують type=password для приховування введених символів. Застосунки можуть дозволяти користувачеві тимчасово переглядати увесь прихований пароль або останній введений символ пароля. | 1 |
 | **6.2.7** | Перевірити, що функціональність "вставки", інструменти браузера для підтримки роботи з паролями та зовнішні менеджери паролів дозволені. | 1 |
 | **6.2.8** | Перевірити, що застосунок перевіряє пароль користувача саме у тому вигляді, в якому він був наданий, без будь-яких змін, таких як обрізання або зміна регістру. | 1 |
 | **6.2.9** | Перевірити, що дозволяється використовувати паролі довжиною щонайменше 64 символи. | 2 |
@@ -45,111 +45,111 @@
 | **6.2.11** | Перевірити, що задокументований перелік контекстно-залежних слів використовується для запобігання створенню паролів, які легко вгадати. | 2 |
 | **6.2.12** | Перевірити, що паролі, які надані під час реєстрації облікового запису або зміни пароля, перевіряються за допомогою набору скомпрометованих паролів, отриманих унаслідок витоків даних. | 2 |
 
-## V6.3 Загальні вимоги до безпеки автентифікації
+## V6.3 Загальна безпека автентифікації
 
-Цей підрозділ містить загальні вимоги до безпеки механізмів автентифікації, а також визначає різні очікування відповідно до рівнів. Застосунки рівня L2 повинні примусово впроваджувати використання багатофакторної автентифікації (MFA). Застосунки рівня L3 повинні використовувати автентифікацію на основі апаратного забезпечення, яка виконується в засвідченому та довіреному середовищі виконання (TEE). Це може включати прив’язані до пристрою ключі доступу, автентифікатори, що забезпечують високий рівень довіри відповідно до eIDAS Level of Assurance (LoA) High, автентифікатори з рівнем гарантії автентифікатора 3 (AAL3) відповідно до стандарту NIST або еквівалентний механізм.
+Цей підрозділ містить загальні вимоги до безпеки механізмів автентифікації, а також визначає різні очікування відповідно до рівнів. Застосунки рівня L2 повинні примусово впроваджувати використання багатофакторної автентифікації (MFA). Застосунки рівня L3 повинні використовувати автентифікацію на основі апаратного забезпечення, яка виконується в засвідченому та довіреному середовищі виконання (TEE). Це може включати прив’язані до пристрою ключі доступу, автентифікатори, що забезпечують високий рівень довіри відповідно до eIDAS Level of Assurance (LoA) High, автентифікатори з третім рівнем гарантії автентифікатора (AAL3) відповідно до стандарту NIST або еквівалентний механізм.
 
 Хоча це досить жорсткий підхід до багатофакторної автентифікації (MFA), він є критично важливим для підвищення рівня захисту користувачів, і будь-яка спроба пом’якшити ці вимоги має супроводжуватися чітким планом щодо зниження ризиків, пов’язаних з автентифікацією, з урахуванням NIST рекомендацій та досліджень з цього питання.
 
 Зверніть увагу, що на момент публікації NIST SP 800-63 вважає електронну пошту [неприйнятною](https://pages.nist.gov/800-63-FAQ/#q-b11) як механізм автентифікації ([архівна копія](https://web.archive.org/web/20250330115328/https://pages.nist.gov/800-63-FAQ/#q-b11)).
 
-Вимоги, наведені в цьому розділі, стосуються низки підрозділів [Керівництво NIST](https://pages.nist.gov/800-63-3/sp800-63b.html), зокрема: [&sect; 4.2.1](https://pages.nist.gov/800-63-3/sp800-63b.html#421-permitted-authenticator-types), [&sect; 4.3.1](https://pages.nist.gov/800-63-3/sp800-63b.html#431-permitted-authenticator-types), [&sect; 5.2.2](https://pages.nist.gov/800-63-3/sp800-63b.html#522-rate-limiting-throttling), та [&sect; 6.1.2](https://pages.nist.gov/800-63-3/sp800-63b.html#-612-post-enrollment-binding).
+Вимоги, наведені в цьому розділі, стосуються низки підрозділів [NIST's Guidance](https://pages.nist.gov/800-63-3/sp800-63b.html), зокрема: [&sect; 4.2.1](https://pages.nist.gov/800-63-3/sp800-63b.html#421-permitted-authenticator-types), [&sect; 4.3.1](https://pages.nist.gov/800-63-3/sp800-63b.html#431-permitted-authenticator-types), [&sect; 5.2.2](https://pages.nist.gov/800-63-3/sp800-63b.html#522-rate-limiting-throttling), та [&sect; 6.1.2](https://pages.nist.gov/800-63-3/sp800-63b.html#-612-post-enrollment-binding).
 
 | # | Опис | Рівень |
 | :---: | :--- | :---: |
 | **6.3.1** | Перевірити, що засоби захисту від атак, таких як підстановка облікових даних (credential stuffing) та перебір паролів (brute force), реалізовані відповідно до документації з безпеки застосунку. | 1 |
 | **6.3.2** | Перевірити, що облікові записи за замовчуванням (наприклад, "root", "admin" або "sa") відсутні в застосунку або вимкнені. | 1 |
 | **6.3.3** | Перевірите, що для доступу до застосунку має використовуватися або механізм багатофакторної автентифікації, або комбінація однофакторних механізмів автентифікації. Для рівня L3 один із факторів повинен бути апаратним механізмом автентифікації, який забезпечує захист від компрометації та підробки особи у разі фішингових атак, а також підтверджує намір автентифікації через дію, ініційовану користувачем (наприклад, натискання кнопки на апаратному ключі FIDO або мобільному телефоні). Ослаблення будь-яких вимог цього пункту можливе лише за наявності повністю документованого обґрунтування та комплексного набору заходів пом’якшення ризиків. | 2 |
-| **6.3.4** | Verify that, if the application includes multiple authentication pathways, there are no undocumented pathways and that security controls and authentication strength are enforced consistently. | 2 |
-| **6.3.5** | Verify that users are notified of suspicious authentication attempts (successful or unsuccessful). This may include authentication attempts from an unusual location or client, partially successful authentication (only one of multiple factors), an authentication attempt after a long period of inactivity or a successful authentication after several unsuccessful attempts. | 3 |
-| **6.3.6** | Verify that email is not used as either a single-factor or multi-factor authentication mechanism. | 3 |
-| **6.3.7** | Verify that users are notified after updates to authentication details, such as credential resets or modification of the username or email address. | 3 |
-| **6.3.8** | Verify that valid users cannot be deduced from failed authentication challenges, such as by basing on error messages, HTTP response codes, or different response times. Registration and forgot password functionality must also have this protection. | 3 |
+| **6.3.4** | Перевірити, що у разі наявності в застосунку кількох шляхів автентифікації, недокументовані шляхи відсутні, а засоби безпеки та рівень надійності автентифікації забезпечуються послідовно. | 2 |
+| **6.3.5** | Перевірити, що користувачі отримують сповіщення про підозрілі спроби автентифікації (успішні або неуспішні). Такими випадками можуть бути спроби автентифікації з незвичної локації або клієнта, частково успішна автентифікація (лише один з кількох факторів), спроба автентифікації після тривалого періоду неактивності або успішна автентифікація після кількох невдалих спроб. | 3 |
+| **6.3.6** | Перевірити, що електронна пошта не використовується як механізм автентифікації ні в якості однофакторної, ні в якості багатофакторної автентифікації. | 3 |
+| **6.3.7** | Перевірити, що користувачі отримують сповіщення після змін у даних автентифікації, таких як скидання облікових даних або зміна імені користувача чи електронної пошти. | 3 |
+| **6.3.8** | Перевірити, що на основі невдалих спроб автентифікації не можна встановити дійсних користувачів, зокрема шляхом аналізу повідомлень про помилки, HTTP-кодів відповіді або різниці у часі відповіді. Функції реєстрації та відновлення пароля також повинні мати цей захист. | 3 |
 
-## V6.4 Authentication Factor Lifecycle and Recovery
+## V6.4 Життєвий цикл факторів автентифікації та відновлення
 
-Authentication factors may include passwords, soft tokens, hardware tokens, and biometric devices. Securely handling the lifecycle of these mechanisms is critical to the security of an application, and this section includes requirements related to this.
+Фактори автентифікації можуть включати паролі, програмні токени, апаратні токени та біометричні пристрої. Безпечне управління життєвим циклом цих механізмів є критично важливим для безпеки застосунку, і в цьому підрозділі наведені відповідні вимоги.
 
-The requirements in this section mostly relate to [&sect; 5.1.1.2](https://pages.nist.gov/800-63-3/sp800-63b.html#memsecretver) or [&sect; 6.1.2.3](https://pages.nist.gov/800-63-3/sp800-63b.html#replacement) of [NIST's Guidance](https://pages.nist.gov/800-63-3/sp800-63b.html).
+Вимоги цього підрозділу здебільшого стосуються [&sect; 5.1.1.2](https://pages.nist.gov/800-63-3/sp800-63b.html#memsecretver) або [&sect; 6.1.2.3](https://pages.nist.gov/800-63-3/sp800-63b.html#replacement) з [NIST's Guidance](https://pages.nist.gov/800-63-3/sp800-63b.html).
 
 | # | Опис | Рівень |
 | :---: | :--- | :---: |
-| **6.4.1** | Verify that system generated initial passwords or activation codes are securely randomly generated, follow the existing password policy, and expire after a short period of time or after they are initially used. These initial secrets must not be permitted to become the long term password. | 1 |
-| **6.4.2** | Verify that password hints or knowledge-based authentication (so-called "secret questions") are not present. | 1 |
-| **6.4.3** | Verify that a secure process for resetting a forgotten password is implemented, that does not bypass any enabled multi-factor authentication mechanisms. | 2 |
-| **6.4.4** | Verify that if a multi-factor authentication factor is lost, evidence of identity proofing is performed at the same level as during enrollment. | 2 |
-| **6.4.5** | Verify that renewal instructions for authentication mechanisms which expire are sent with enough time to be carried out before the old authentication mechanism expires, configuring automated reminders if necessary. | 3 |
-| **6.4.6** | Verify that administrative users can initiate the password reset process for the user, but that this does not allow them to change or choose the user's password. This prevents a situation where they know the user's password. | 3 |
+| **6.4.1** | Перевірити, що системно згенеровані початкові паролі або коди активації генеруються надійно випадковим чином, відповідають чинній політиці паролів та припиняють дію після короткого періоду або після першого використання. Ці початкові секрети не повинні використовуватися як довгострокові паролі. | 1 |
+| **6.4.2** | Перевірити, що підказки для пароля або автентифікація що ґрунтується на знаннях (так звані "секретні питання") відсутні. | 1 |
+| **6.4.3** | Перевірити, що реалізовано безпечний процес скидання забутого пароля, який не обходить жодні увімкнені механізми багатофакторної автентифікації. | 2 |
+| **6.4.4** | Перевірити, що у разі втрати фактора багатофакторної автентифікації перевірка особи здійснюється на тому ж рівні, що й під час реєстрації. | 2 |
+| **6.4.5** | Перевірити, що інструкції щодо оновлення автентифікаційних механізмів, які мають термін дії, надсилаються з достатнім запасом часу для їх виконання до закінчення дії старого механізму, з налаштуванням автоматичних нагадувань за потреби. | 3 |
+| **6.4.6** | Перевірити, що адміністративні користувачі можуть ініціювати процес скидання пароля для користувача, але не мають можливості змінювати або обирати пароль користувача. Це запобігає ситуації, коли адміністратор знає пароль користувача. | 3 |
 
-## V6.5 General Multi-factor authentication requirements
+## V6.5 Загальні вимоги до багатофакторної автентифікації
 
-This section provides general guidance that will be relevant to various different multi-factor authentication methods.
+Цей підрозділ містить загальні рекомендації, що стосуються різних методів багатофакторної автентифікації.
 
-The mechanisms include:
+Механізми включають:
 
 * Lookup Secrets
 * Time based One-time Passwords (TOTPs)
-* Out-of-Band mechanisms
+* Out-of-Band механізми
 
-Lookup secrets are pre-generated lists of secret codes, similar to Transaction Authorization Numbers (TAN), social media recovery codes, or a grid containing a set of random values. This type of authentication mechanism is considered "something you have" because the codes are deliberately not memorable so will need to be stored somewhere.
+Lookup secrets це заздалегідь згенеровані списки секретних кодів, подібні до кодів авторизації транзакцій (TAN), кодів відновлення в соціальних мережах або таблиці з набором випадкових значень. Цей тип автентифікації вважається "тим, що ви маєте", бо коди навмисно неможливо запам’ятати, тому їх треба десь зберігати.
 
-Time based One-time Passwords (TOTPs) are physical or soft tokens that display a continually changing pseudo-random one-time challenge. This type of authentication mechanism is considered "something you have". Multi-factor TOTPs are similar to single-factor TOTPs, but require a valid PIN code, biometric unlocking, USB insertion or NFC pairing, or some additional value (such as transaction signing calculators) to be entered to create the final One-time Password (OTP).
+Time based One-time Passwords (TOTPs) це фізичні або програмні токени, які відображають постійно змінний псевдовипадковий одноразовий код. Цей тип механізму автентифікації вважається "тим, що ви маєте". Багатофакторні TOTP подібні до однофакторних, але вимагають введення дійсного PIN-коду, біометричного розблокування, підключення через USB або сполучення через NFC, або додаткового значення (наприклад, калькулятора для підпису транзакцій) для створення фінального одноразового пароля (OTP).
 
-Details on out-of-band mechanisms will be provided in the next section.
+Деталі щодо out-of-band механізмів буде наведено в наступному підрозділі.
 
-The requirements in these sections mostly relate to [&sect; 5.1.2](https://pages.nist.gov/800-63-3/sp800-63b.html#-512-look-up-secrets), [&sect; 5.1.3](https://pages.nist.gov/800-63-3/sp800-63b.html#-513-out-of-band-devices), [&sect; 5.1.4.2](https://pages.nist.gov/800-63-3/sp800-63b.html#5142-single-factor-otp-verifiers), [&sect; 5.1.5.2](https://pages.nist.gov/800-63-3/sp800-63b.html#5152-multi-factor-otp-verifiers), [&sect; 5.2.1](https://pages.nist.gov/800-63-3/sp800-63b.html#521-physical-authenticators), and [&sect; 5.2.3](https://pages.nist.gov/800-63-3/sp800-63b.html#523-use-of-biometrics) of [NIST's Guidance](https://pages.nist.gov/800-63-3/sp800-63b.html).
-
-| # | Опис | Рівень |
-| :---: | :--- | :---: |
-| **6.5.1** | Verify that lookup secrets, out-of-band authentication requests or codes, and time-based one-time passwords (TOTPs) are only successfully usable once. | 2 |
-| **6.5.2** | Verify that, when being stored in the application's backend, lookup secrets with less than 112 bits of entropy (19 random alphanumeric characters or 34 random digits) are hashed with an approved password storage hashing algorithm that incorporates a 32-bit random salt. A standard hash function can be used if the secret has 112 bits of entropy or more. | 2 |
-| **6.5.3** | Verify that lookup secrets, out-of-band authentication code, and time-based one-time password seeds, are generated using a Cryptographically Secure Pseudorandom Number Generator (CSPRNG) to avoid predictable values. | 2 |
-| **6.5.4** | Verify that lookup secrets and out-of-band authentication codes have a minimum of 20 bits of entropy (typically 4 random alphanumeric characters or 6 random digits is sufficient). | 2 |
-| **6.5.5** | Verify that out-of-band authentication requests, codes, or tokens, as well as time-based one-time passwords (TOTPs) have a defined lifetime. Out of band requests must have a maximum lifetime of 10 minutes and for TOTP a maximum lifetime of 30 seconds. | 2 |
-| **6.5.6** | Verify that any authentication factor (including physical devices) can be revoked in case of theft or other loss. | 3 |
-| **6.5.7** | Verify that biometric authentication mechanisms are only used as secondary factors together with either something you have or something you know. | 3 |
-| **6.5.8** | Verify that time-based one-time passwords (TOTPs) are checked based on a time source from a trusted service and not from an untrusted or client provided time. | 3 |
-
-## V6.6 Out-of-Band authentication mechanisms
-
-This usually involves the authentication server communicating with a physical device over a secure secondary channel. For example, sending push notifications to mobile devices. This type of authentication mechanism is considered "something you have".
-
-Unsafe out-of-band authentication mechanisms such as e-mail and VOIP are not permitted. PSTN and SMS authentication are currently considered to be ["restricted" authentication mechanisms](https://pages.nist.gov/800-63-FAQ/#q-b01) by NIST and should be deprecated in favor of Time based One-time Passwords (TOTPs), a cryptographic mechanism, or similar. NIST SP 800-63B [&sect; 5.1.3.3](https://pages.nist.gov/800-63-3/sp800-63b.html#-5133-authentication-using-the-public-switched-telephone-network) recommends addressing the risks of device swap, SIM change, number porting, or other abnormal behavior, if telephone or SMS out-of-band authentication absolutely has to be supported. While this ASVS section does not mandate this as a requirement, not taking these precautions for a sensitive L2 app or an L3 app should be seen as a significant red flag.
-
-Note that NIST has also recently provided guidance which [discourages the use of push notifications](https://pages.nist.gov/800-63-4/sp800-63b/authenticators/#fig-3). While this ASVS section does not do so, it is important to be aware of the risks of "push bombing".
+Вимоги, викладені в цих підрозділах, здебільшого відповідають пунктам [&sect; 5.1.2](https://pages.nist.gov/800-63-3/sp800-63b.html#-512-look-up-secrets), [&sect; 5.1.3](https://pages.nist.gov/800-63-3/sp800-63b.html#-513-out-of-band-devices), [&sect; 5.1.4.2](https://pages.nist.gov/800-63-3/sp800-63b.html#5142-single-factor-otp-verifiers), [&sect; 5.1.5.2](https://pages.nist.gov/800-63-3/sp800-63b.html#5152-multi-factor-otp-verifiers), [&sect; 5.2.1](https://pages.nist.gov/800-63-3/sp800-63b.html#521-physical-authenticators), та [&sect; 5.2.3](https://pages.nist.gov/800-63-3/sp800-63b.html#523-use-of-biometrics) з [NIST's Guidance](https://pages.nist.gov/800-63-3/sp800-63b.html).
 
 | # | Опис | Рівень |
 | :---: | :--- | :---: |
-| **6.6.1** | Verify that authentication mechanisms using the Public Switched Telephone Network (PSTN) to deliver One-time Passwords (OTPs) via phone or SMS are offered only when the phone number has previously been validated, alternate stronger methods (such as Time based One-time Passwords) are also offered, and the service provides information on their security risks to users. For L3 applications, phone and SMS must not be available as options. | 2 |
-| **6.6.2** | Verify that out-of-band authentication requests, codes, or tokens are bound to the original authentication request for which they were generated and are not usable for a previous or subsequent one. | 2 |
-| **6.6.3** | Verify that a code based out-of-band authentication mechanism is protected against brute force attacks by using rate limiting. Consider also using a code with at least 64 bits of entropy. | 2 |
-| **6.6.4** | Verify that, where push notifications are used for multi-factor authentication, rate limiting is used to prevent push bombing attacks. Number matching may also mitigate this risk. | 3 |
+| **6.5.1** | Перевірити, що lookup secrets, запити або коди out-of-band автентифікації, а також time-based one-time passwords (TOTP) можуть бути успішно використані лише один раз. | 2 |
+| **6.5.2** | Перевірити, що під час зберігання в бекенді застосунку lookup secrets з ентропією менш ніж 112 біт (19 випадкових алфавітно-цифрових символів або 34 випадкові цифри) хешуються з використанням затвердженого алгоритму хешування для зберігання паролів, який включає 32-бітну випадкову сіль. Якщо секрет має ентропію 112 біт або більше, може використовуватися стандартна хеш-функція. | 2 |
+| **6.5.3** | Перевірити, що lookup secrets, out-of-band коди автентифікації та seed-значення для time-based one-time passwords генеруються з використанням криптографічно стійкого псевдовипадкового генератора (CSPRNG) для уникнення передбачуваних значень. | 2 |
+| **6.5.4** | Перевірити, що lookup secrets та out-of-band коди автентифікації мають мінімум 20 біт ентропії (зазвичай достатньо 4 випадкових алфавітно-цифрових символи або 6 випадкових цифр). | 2 |
+| **6.5.5** | Перевірити, що запити, коди або токени автентифікації типу out-of-band, а також time-based one-time passwords (TOTP) мають визначений термін дії. Максимальний термін дії out-of-band запитів 10 хвилин, для TOTP 30 секунд. | 2 |
+| **6.5.6** | Перевірити, що будь-який фактор автентифікації (включно з фізичними пристроями) може бути відкликаний у разі крадіжки або іншої втрати. | 3 |
+| **6.5.7** | Перевірити, що механізми біометричної автентифікації використовуються лише як другорядні фактори разом із фактором "те, що ви маєте" або "те, що ви знаєте". | 3 |
+| **6.5.8** | Перевірити, що time-based one-time passwords (TOTP) перевіряються на основі часових даних із довіреного сервісу, а не з недовіреного або часу, наданого клієнтом. | 3 |
 
-## V6.7 Cryptographic authentication mechanism
+## V6.6 Механізми автентифікації out-of-band
 
-Cryptographic authentication mechanisms include smart cards or FIDO keys, where the user has to plug in or pair the cryptographic device to the computer to complete authentication. The authentication server will send a challenge nonce to the cryptographic device or software, and the device or software calculates a response based upon a securely stored cryptographic key. The requirements in this section provide implementation-specific guidance for these mechanisms, with guidance on cryptographic algorithms being covered in the "Cryptography" chapter.
+Зазвичай це передбачає обмін інформацією між сервером автентифікації та фізичним пристроєм через захищений додатковий канал. Наприклад, надсилання push-повідомлень на мобільні пристрої. Цей тип механізму автентифікації вважається фактором "те, що ви маєте".
 
-Where shared or secret keys are used for cryptographic authentication, these should be stored using the same mechanisms as other system secrets, as documented in the "Secret Management" section in the "Configuration" chapter.
+Небезпечні механізми автентифікації out-of-band, такі як електронна пошта та VOIP, не допускаються. PSTN і SMS наразі вважаються NIST ["обмеженими" механізмами автентифікації](https://pages.nist.gov/800-63-FAQ/#q-b01) та мають бути поступово замінені на Time based One-time Passwords (TOTP), криптографічні механізми або подібні рішення. У NIST SP 800-63B [&sect; 5.1.3.3](https://pages.nist.gov/800-63-3/sp800-63b.html#-5133-authentication-using-the-public-switched-telephone-network) rрекомендовано враховувати ризики, пов’язані зі зміною пристрою, SIM-картки, перенесенням номера або іншою аномальною поведінкою, якщо телефонна або SMS автентифікація out-of-band все ж таки необхідна. Хоча цей підрозділ ASVS не встановлює це як обов’язкову вимогу, ігнорування цих заходів безпеки для чутливих застосунків рівня L2 або L3 слід вважати серйозним сигналом про наявність проблеми.
 
-The requirements in this section mostly relate to [&sect; 5.1.7.2](https://pages.nist.gov/800-63-3/sp800-63b.html#sfcdv) of [NIST's Guidance](https://pages.nist.gov/800-63-3/sp800-63b.html).
-
-| # | Опис | Рівень |
-| :---: | :--- | :---: |
-| **6.7.1** | Verify that the certificates used to verify cryptographic authentication assertions are stored in a way protects them from modification. | 3 |
-| **6.7.2** | Verify that the challenge nonce is at least 64 bits in length, and statistically unique or unique over the lifetime of the cryptographic device. | 3 |
-
-## V6.8 Authentication with an Identity Provider
-
-Identity Providers (IdPs) provide federated identity for users. Users will often have more than one identity with multiple IdPs, such as an enterprise identity using Azure AD, Okta, Ping Identity, or Google, or consumer identity using Facebook, Twitter, Google, or WeChat, to name just a few common alternatives. This list is not an endorsement of these companies or services, but simply an encouragement for developers to consider the reality that many users have many established identities. Organizations should consider integrating with existing user identities, as per the risk profile of the IdP's strength of identity proofing. For example, it is unlikely a government organization would accept a social media identity as a login for sensitive systems, as it is easy to create fake or throwaway identities, whereas a mobile game company may well need to integrate with major social media platforms to grow their active player base.
-
-Secure use of external identity providers requires careful configuration and verification to prevent identity spoofing or forged assertions. This section provides requirements to address these risks.
+Зверніть увагу, що NIST нещодавно надала рекомендації, які [не радять використовувати push-повідомлення](https://pages.nist.gov/800-63-4/sp800-63b/authenticators/#fig-3). Хоча цей підрозділ ASVS цього прямо не вимагає, важливо усвідомлювати ризики, пов’язані з "push bombing".
 
 | # | Опис | Рівень |
 | :---: | :--- | :---: |
-| **6.8.1** | Verify that, if the application supports multiple identity providers (IdPs), the user's identity cannot be spoofed via another supported identity provider (eg. by using the same user identifier). The standard mitigation would be for the application to register and identify the user using a combination of the IdP ID (serving as a namespace) and the user's ID in the IdP. | 2 |
-| **6.8.2** | Verify that the presence and integrity of digital signatures on authentication assertions (for example on JWTs or SAML assertions) are always validated, rejecting any assertions that are unsigned or have invalid signatures. | 2 |
-| **6.8.3** | Verify that SAML assertions are uniquely processed and used only once within the validity period to prevent replay attacks. | 2 |
-| **6.8.4** | Verify that, if an application uses a separate Identity Provider (IdP) and expects specific authentication strength, methods, or recentness for specific functions, the application verifies this using the information returned by the IdP. For example, if OIDC is used, this might be achieved by validating ID Token claims such as 'acr', 'amr', and 'auth_time' (if present). If the IdP does not provide this information, the application must have a documented fallback approach that assumes that the minimum strength authentication mechanism was used (for example, single-factor authentication using username and password). | 2 |
+| **6.6.1** | Перевірити, що механізми автентифікації, які використовують публічну телефонну мережу (PSTN) для доставки одноразових паролів (OTP) через телефон або SMS, пропонуються лише за умови попередньої валідації телефонного номера, також надаються альтернативні більш надійні методи (наприклад, Time based One-time Passwords), а користувачам надається інформація про їхні ризики безпеки. Для застосунків рівня L3 телефон та SMS не повинні бути доступними як опції.  | 2 |
+| **6.6.2** | Перевірити, що запити out-of-band автентифікації, коди або токени прив’язані до початкового запиту автентифікації, для якого вони були згенеровані, і не можуть бути використані для попередніх чи наступних запитів. | 2 |
+| **6.6.3** | Перевірити, що кодовий out-of-band механізм автентифікації захищений від атак методом перебору шляхом обмеження частоти запитів. Також рекомендується використовувати коди з ентропією не менше 64 біт. | 2 |
+| **6.6.4** | Перевірити, що у разі використання push-повідомлень для багатофакторної автентифікації застосовується обмеження частоти запитів для запобігання атакам типу push bombing. Використання number matching механізму також може знизити цей ризик. | 3 |
+
+## V6.7 Криптографічні механізми автентифікації
+
+До криптографічних механізмів автентифікації належать смарт-карти або ключі FIDO, коли користувач повинен під’єднати або з’єднати криптографічний пристрій із комп’ютером для завершення автентифікації. Сервер автентифікації надсилає nonce-виклик криптографічному пристрою або програмному забезпеченню, і пристрій або програмне забезпечення обчислює відповідь на основі надійно збереженого криптографічного ключа. Вимоги в цьому підрозділі містять рекомендації щодо реалізації таких механізмів, тоді як вибір криптографічних алгоритмів описується у розділі "Криптографія".
+
+Якщо для криптографічної автентифікації використовуються спільні або секретні ключі, вони мають зберігатися з використанням тих самих механізмів, що й інші системні секрети, як описано в підрозділі "Управління секретами" розділу "Конфігурація".
+
+Вимоги цього підрозділу переважно відповідають [&sect; 5.1.7.2](https://pages.nist.gov/800-63-3/sp800-63b.html#sfcdv) [NIST's Guidance](https://pages.nist.gov/800-63-3/sp800-63b.html).
+
+| # | Опис | Рівень |
+| :---: | :--- | :---: |
+| **6.7.1** | Перевірити, що сертифікати, які використовуються для перевірки криптографічних автентифікаційних тверджень, зберігаються таким чином, щоб запобігти їхній модифікації. | 3 |
+| **6.7.2** | Перевірити, що nonce-виклик має довжину щонайменше 64 біти та є статистично унікальним або унікальним протягом усього строку служби криптографічного пристрою. | 3 |
+
+## V6.8 Автентифікація за допомогою Identity Provider
+
+Identity Providers (IdPs) забезпечують федеративну ідентифікацію користувачів. Користувачі часто мають більше ніж одну ідентичність у різних IdPs, наприклад, корпоративну ідентичність через Azure AD, Okta, Ping Identity або Google, або ж споживчу ідентичність через Facebook, Twitter, Google чи WeChat, перелічуючи лише кілька поширених варіантів. Цей перелік не є рекомендацією чи схваленням цих компаній або сервісів, а лише заохоченням для розробників враховувати реалії, що багато користувачів мають багато вже встановлених ідентичностей. Організаціям слід розглядати інтеграцію з існуючими ідентичностями користувачів відповідно до профілю ризику, що базується на рівні підтвердження ідентичності у конкретного IdP. Наприклад, навряд чи державна організація погодиться на використання соціальної мережі як логіну для доступу до чутливих систем, оскільки легко створити фальшиві або тимчасові ідентичності, тоді як компанія, що розробляє мобільні ігри, може потребувати інтеграції з основними соціальними платформами для збільшення кількості активних гравців.
+
+Безпечне використання зовнішніх identity provider потребує уважного налаштування та перевірки, запобігти спуфінгу ідентичності або підробленим автентифікаційним твердженням (forged assertions). У цьому підрозділі наведено вимоги для усунення цих ризиків.
+
+| # | Опис | Рівень |
+| :---: | :--- | :---: |
+| **6.8.1** | Перевірити, що якщо застосунок підтримує кілька identity provider (IdPs), то неможливо підробити ідентичність користувача через інший підтримуваний IdP (наприклад, використовуючи той самий ідентифікатор користувача). Стандартним способом захисту є реєстрація та ідентифікація користувача в застосунку за допомогою комбінації ідентифікатора IdP (який виступає як простір імен) та ID користувача в цьому IdP.| 2 |
+| **6.8.2** | Перевірити наявність і цілісність цифрових підписів в автентифікаційних твердженнях (наприклад, у JWT або SAML-assertion) та відхиляти всі твердження, які не підписані або мають недійсний підпис. | 2 |
+| **6.8.3** | Перевірити, що SAML-твердження обробляються унікально та використовуються лише один раз протягом періоду їхньої чинності, щоб запобігти атакам повторного відтворення (replay attacks). | 2 |
+| **6.8.4** | Перевірити, що якщо застосунок використовує окремий Identity Provider (IdP) і вимагає певної сили автентифікації, методів або актуальності для виконання конкретних функцій, то застосунок перевіряє ці параметри на основі інформації, наданої IdP. Наприклад, при використанні OIDC це може здійснюватися шляхом валідації claims ID Token'а, таких як 'acr', 'amr' та 'auth_time' (за наявності). Якщо IdP не надає такої інформації, застосунок повинен мати задокументований резервний механізм, який виходить з припущення, що була використана автентифікація мінімальної сили (наприклад, однофакторна автентифікація з логіном і паролем). | 2 |
 
 ## Посилання
 
