@@ -30,7 +30,7 @@ Each document below tracks its translation progress using a single status symbol
 | 0x15-V6-Authentication.md | 🔍 Reviewed |
 | 0x16-V7-Session-Management.md | 🔍 Reviewed |
 | 0x17-V8-Authorization.md | 🔍 Reviewed |
-| 0x18-V9-Self-contained-Tokens.md | 🔄 In Progress |
+| 0x18-V9-Self-contained-Tokens.md | ✅ Translated |
 | 0x19-V10-OAuth-and-OIDC.md | ⬜ Not started |
 | 0x20-V11-Cryptography.md | ⬜ Not started |
 | 0x21-V12-Secure-Communication.md | ⬜ Not started |
